@@ -532,7 +532,7 @@ header {
 
 @media (max-width: 500px) {
   html {
-    font-size: 60%;
+    font-size: 40%;
   }
 
   .about-content .left-content {
@@ -581,11 +581,11 @@ header {
   .proj-2 img {
     height: 250px;
     width: 290px;
-    margin-bottom: 0.5rem;
+    margin-bottom: rem;
   }
 
   .work-arrow-2 a {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     text-decoration: none;
     color: #25b79f;
     display: block;
@@ -596,6 +596,33 @@ header {
     width: 100%;
   }
 }
+.about-content img {
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.about-me .about-heading {
+  color: #25b79f;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 10px;
+  
+}
+.skills .skills-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #25b79f;
+  text-align: center;
+  margin-top: 20px;
+}
+.about-me {
+  background-color: #07374a;
+  padding: 6rem 0;
+  height: 120vh;
+}
+
 
 @media (min-width: 501px) and (max-width: 768px) {
   html {
@@ -767,19 +794,9 @@ header {
 .school-icon {
   width: 10%;
   height: auto;
-  margin-left: 30%;
+  margin-left: 10%;
   display: flex;
 }
-/* เมื่อหน้าจอมีความกว้างไม่เกิน 768px */
-@media (max-width: 768px) {
-  /* กำหนดสไตล์ CSS ที่ต้องการเปลี่ยนแปลง */
-}
-
-/* เมื่อหน้าจอมีความกว้างไม่เกิน 500px */
-@media (max-width: 500px) {
-  /* กำหนดสไตล์ CSS ที่ต้องการเปลี่ยนแปลง */
-}
-
 
 .topnav {
   background-color: #33333300;
@@ -835,3 +852,39 @@ header {
     text-align: left;
   }
 }
+@media (max-width: 400.536px) and (max-height: 230.154px) {
+  .about-content .left-content {
+    flex-basis: 100%;
+    text-align: center;
+  }
+  .about-me {
+    background-color: #07374a;
+    padding: 0rem 0;
+    height: 100vh;
+  }
+
+  .skills {
+    width: 100%;
+  }
+
+  .skills-bar {
+    padding: 25px 300px;
+  }
+
+  .skills .skills-heading {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #25b79f;
+    text-align: center;
+    margin-top: 100px;
+  }
+}
+
+
+
+
+
+
+
+
+
