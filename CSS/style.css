@@ -605,7 +605,7 @@ header {
 .school-icon {
   width: 7.5%;
   height: auto;
-  margin-left: 30%;
+  margin-left: 27%;
   display: flex;
 }
 
@@ -645,7 +645,7 @@ header {
 
 /* ////......Media query......//// */
 
-@media (min-width: 501px) and (max-width: 768px) {   /*mobile*/
+@media (max-width: 768px) {   /*mobile*/
   html {
     font-size: 65%;
   }
@@ -764,7 +764,7 @@ header {
 }
 }
 
-@media (min-width: 769px) and (max-width: 1200px) {         /*tablet*/
+@media  (max-width: 1200px) {         /*tablet*/
   html {
     font-size: 70%;
   }
