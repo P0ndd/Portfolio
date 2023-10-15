@@ -557,17 +557,19 @@ header {
   background-color: #25b79f;
   padding: 6rem 0;
   text-align: center;
+  height: 100vh;
 }
 
 .school-text {
-  margin-left: 10px;
+  margin-left: 3.5vh;
   text-align: left; /* จัดเนื้อหาข้อความด้านซ้าย */
 }
 
 .school-name {
-  font-size: 1.5rem;
-  font-weight: bold; /* ตัวหนา */
+  font-size: 1.8rem;
+  font-weight: 600; /* ตัวหนา */
   color: #ffffff;
+  
 }
 
 .school-duration {
@@ -597,12 +599,13 @@ header {
   text-align: center;
   font-size: 1.5rem;
   align-items: center; /* จัดให้เนื้อหาแสดงตรงกลางแนวตั้ง */
+  padding-bottom: 4vh;
 }
 
 .school-icon {
-  width: 10%;
+  width: 7.5%;
   height: auto;
-  margin-left: 10%;
+  margin-left: 30%;
   display: flex;
 }
 
@@ -632,6 +635,7 @@ header {
 .topnav  {
   background-color: #04aa6d00;
   color: white;
+  
 }
 
 /* Hide the link that should open and close the topnav on small screens */
@@ -641,74 +645,7 @@ header {
 
 /* ////......Media query......//// */
 
-@media (max-width: 500px) {
-  html {
-    font-size: 40%;
-  }
-
-  .about-content .left-content {
-    flex-basis: 100%;
-    text-align: center;
-  }
-
-  .about-content .right-content {
-    flex-basis: 100%;
-  }
-
-  .skills {
-    width: 100%;
-  }
-
-  .skills-bar .bar .progress-line {
-    width: 100%;
-  }
-
-  .work-arrow {
-    display: none;
-  }
-
-  .right-content h1 {
-    margin-top: 3.2rem;
-  }
-
-  .proj-1{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  .proj-1 img {
-    height: 230px;
-    width: 290px;
-    margin-bottom: 0.5rem;
-  }
-  
-  .proj-2{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  .proj-2 img {
-    height: 250px;
-    width: 290px;
-    margin-bottom: rem;
-  }
-
-  .work-arrow-2 a {
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: #25b79f;
-    display: block;
-    text-align: center;
-  }
-
-  .contact-content {
-    width: 100%;
-  }
-}
-
-@media (min-width: 501px) and (max-width: 768px) {
+@media (min-width: 501px) and (max-width: 768px) {   /*mobile*/
   html {
     font-size: 65%;
   }
@@ -773,9 +710,61 @@ header {
   .contact-content {
     width: 100%;
   }
+.about-me {
+  background-color: #07374a;
+  padding: 6rem 0;
+  height: 130vh;
+}
+.Education-heading {
+  text-align: center;
+  color: #07374a;
+  font-size: 3rem;
+}
+.school-info {
+  display: flex;
+  text-align: center;
+  font-size: 2vh;
+  align-items: center;
+  padding-bottom: 1vh;
+}
+.school-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+.education-section {
+  background-color: #25b79f;
+  padding: 9rem 0;
+  text-align: center;
+  height: 100vh;
+}
+.school-info {
+  display: flex;
+  text-align: center;
+  font-size: 2vh;
+  align-items: center;
+  padding-bottom: 5vh;
+}
+.school-icon {
+    width: 16%;
+    height: auto;
+    margin-left: 10%;
+    display: flex;
+}
+.portfolio {
+  background: #07374a;
+  padding: 6rem 0;
+  height: 100vh;
+}
+.IMG-ITPE {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+}
 }
 
-@media (min-width: 769px) and (max-width: 1200px) {
+@media (min-width: 769px) and (max-width: 1200px) {         /*tablet*/
   html {
     font-size: 70%;
   }
@@ -822,7 +811,58 @@ header {
   .contact-content {
     width: 100%;
   }
+
+.education-section {
+  background-color: #25b79f;
+  padding: 6rem 0;
+  text-align: center;
+  height: 100vh;
 }
+.Education-heading {
+  text-align: center;
+  color: #07374a;
+  font-size: 3rem;
+}
+.school-text {
+  margin-left: 4vh;
+  text-align: left;
+  font-size: 2.5vh;
+}
+.school-icon {
+  width: 20%;
+  height: auto;
+  margin-left: 8vh;
+  display: flex;
+}
+.school-info {
+  display: flex;
+  text-align: center;
+  font-size: 1.5rem;
+  align-items: center;
+  padding-bottom: 10vh;
+}
+.school-name {
+  font-size: 2.7rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+.school-duration {
+  font-size: 2rem;
+  color: #ffffff;
+}
+.portfolio {
+  background: #07374a;
+  padding: 6rem 0;
+  height: 100vh;
+}
+.IMG-ITPE {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+}
+
 
 /* @media (orientation: landscape) and (max-height: 500px) {
   .header {
