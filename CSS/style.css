@@ -645,230 +645,167 @@ header {
 
 /* ////......Media query......//// */
 
-@media (max-width: 768px) {   /*mobile*/
-  html {
-    font-size: 65%;
-  }
-
+@media (max-width: 1200px) {
   .about-content .left-content {
-    flex-basis: 100%;
+    flex-basis: 43%;
     text-align: center;
-  }
-
-  .about-content .right-content {
-    flex-basis: 100%;
-  }
-
-  .skills {
-    width: 100%;
-  }
-
-  .skills-bar .bar .progress-line {
-    width: 100%;
-  }
-
-  .work-arrow {
-    display: none;
-  }
-
-  .right-content h1 {
-    margin-top: 3.2rem;
-  }
-
-  .proj-1{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  .proj-1 img {
-    height: 240px;
-    width: 290px;
-    margin-bottom: 0.5rem;
-  }
-  
-  .proj-2{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  .proj-2 img {
-    height: 240px;
-    width: 290px;
-    margin-bottom: 0.5rem;
-  }
-
-  .work-arrow-2 a {
-    font-size: 1.3rem;
-    text-decoration: none;
-    color: #25b79f;
-    display: block;
-    text-align: center;
-  }
-
-  .contact-content {
-    width: 100%;
-  }
+}
 .about-me {
   background-color: #07374a;
-  padding: 6rem 0;
-  height: 130vh;
+  padding: 10rem 0;
+  height: 120vh;
+}
+.school-icon {
+  width: 7.5%;
+  height: auto;
+  margin-left: 20%;
+  display: flex;
 }
 .Education-heading {
   text-align: center;
   color: #07374a;
-  font-size: 3rem;
-}
-.school-info {
-  display: flex;
-  text-align: center;
-  font-size: 2vh;
-  align-items: center;
-  padding-bottom: 1vh;
-}
-.school-name {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #ffffff;
-}
-.education-section {
-  background-color: #25b79f;
-  padding: 9rem 0;
-  text-align: center;
-  height: 100vh;
-}
-.school-info {
-  display: flex;
-  text-align: center;
-  font-size: 2vh;
-  align-items: center;
-  padding-bottom: 5vh;
-}
-.school-icon {
-    width: 16%;
-    height: auto;
-    margin-left: 10%;
-    display: flex;
-}
-.portfolio {
-  background: #07374a;
-  padding: 6rem 0;
-  height: 100vh;
+  font-size: 2rem;
+  padding-bottom: 3rem;
 }
 .IMG-ITPE {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 85%;
+  width: 48%;
 }
 }
 
-@media  (max-width: 1200px) {         /*tablet*/
-  html {
-    font-size: 70%;
+@media (max-width: 991px) {
+  .about-content {
+    display: flex;
+    justify-content: center;
   }
 
   .about-content .left-content {
-    flex-basis: 100%;
+    flex: 0 0 80%;
     text-align: center;
   }
+  .about-me {
+    background-color: #07374a;
+    padding: 10rem 0;
+    height: 80rem;
+}
+}
 
-  .about-content .right-content {
-    flex-basis: 100%;
-  }
 
-  .skills {
-    width: 100%;
+@media (max-width: 768px) {
+.school-icon {
+    width: 15%;
+    height: auto;
+    margin-left: 2%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+}
+.school-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+.education{
+  padding: 10%;
+  padding-top: 1px;
 
-  .work-arrow {
-    display: none;
-  }
-
-  .left-content h1 {
-    margin-top: 3.2rem;
-    text-align: center;
-  }
-
-  .right-content h1 {
-    margin-top: 3.2rem;
-    text-align: center;
-  }
-
-  .work-arrow-2 a {
-    font-size: 1.3rem;
-    text-decoration: none;
-    color: #25b79f;
-    display: block;
-    text-align: center;
-  }
-
-  .contact-content {
-    width: 100%;
-  }
-
-.education-section {
-  background-color: #25b79f;
-  padding: 6rem 0;
-  text-align: center;
-  height: 100vh;
 }
 .Education-heading {
   text-align: center;
   color: #07374a;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
-.school-text {
-  margin-left: 4vh;
-  text-align: left;
-  font-size: 2.5vh;
+.IMG-ITPE {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 69%;
+}
+}
+
+@media (max-width: 520px) {
+  .skills {
+    width: 500px; /* ปรับความกว้างตามที่คุณต้องการ */
+    margin-top: 7rem;
+}
+.skills-bar .bar .progress-line {
+  position: relative;
+  height: 10px;
+  width: 400px;
+  background: #f0f0f0;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+.about-me .about-content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 450px;
+  margin: 0 auto; /* จัดกลางแนวนอน */
+}
+.about-me {
+  background-color: #07374a;
+  padding: 5rem 0;
+  height: 100rem;
+}
+.school-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
 }
 .school-icon {
   width: 20%;
   height: auto;
-  margin-left: 8vh;
+  margin-left: 2%;
   display: flex;
-}
-.school-info {
-  display: flex;
-  text-align: center;
-  font-size: 1.5rem;
-  align-items: center;
-  padding-bottom: 10vh;
-}
-.school-name {
-  font-size: 2.7rem;
-  font-weight: bold;
-  color: #ffffff;
-}
-.school-duration {
-  font-size: 2rem;
-  color: #ffffff;
-}
-.portfolio {
-  background: #07374a;
-  padding: 6rem 0;
-  height: 100vh;
 }
 .IMG-ITPE {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
+  width: 80%;
 }
 }
 
+@media (max-width: 462px) {
+  .skills {
+    width: 400px; /* ปรับความกว้างตามที่คุณต้องการ */
+    margin-top: 7rem;
+}
+.about-me .about-content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  margin: 0 auto;
+}
+.skills-bar .bar .progress-line {
+  position: relative;
+  height: 20px;
+  width: 350px;
+  background: #f0f0f0;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+.bar .progress-line span::after {
+  position: absolute;
+  right: 0;
+  top: -28px;
+  color: #07374a;
+  font-size: 10px;
+  font-weight: 700;
+  background: #f0f0f0;
+  padding: 1px 8px;
+  border-radius: 3px;
+}
+}
 
-/* @media (orientation: landscape) and (max-height: 500px) {
-  .header {
-    height: 90vmax;
-  }
-} */
+@media (max-width: 371px) {
+  /* Your styles for 371px and below here */
+}
+
 
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
