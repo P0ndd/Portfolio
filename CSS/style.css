@@ -693,7 +693,7 @@ header {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 777px) {
 .school-icon {
     width: 15%;
     height: auto;
